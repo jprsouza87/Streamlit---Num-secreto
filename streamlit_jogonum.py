@@ -51,10 +51,12 @@ if st.button("Testar", disabled=st.session_state["fim_jogo"]):
     if numusuario == st.session_state["numsorteado"]:
         st.session_state["resultado"] = f"🎉 GANHOU!!! {numusuario} = {st.session_state['numsorteado']}!"
         st.session_state["fim_jogo"] = True
+        st.rerun()  # ✅ rerenderiza imediatamente
 
     elif st.session_state["tentativas"] >= 3:
         st.session_state["resultado"] = f"❌ Perdeu! O número sorteado era {st.session_state['numsorteado']}."
         st.session_state["fim_jogo"] = True
+        st.rerun()  # ✅ rerenderiza imediatamente
 
     elif st.session_state["numsorteado"] < numusuario:
         st.session_state["resultado"] = f"O número sorteado é menor que {numusuario}!"
