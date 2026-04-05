@@ -50,6 +50,4 @@ Este projeto foi desenvolvido com foco em aprendizado prático e demonstra domí
 
 ## 👤 Autor
 
-**João Paulo R. Souza**
-[![GitHub](https://img.shields.io/badge/GitHub-jprsouza87-181717?logo=github)](https://github.com/jprsouza87)
-
+João Paulo R. Souza — [github.com/jprsouza87](https://github.com/jprsouza87)
