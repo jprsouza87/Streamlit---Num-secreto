@@ -3,7 +3,7 @@ import random as rd
 
 
 # set_page_config SEMPRE como primeira chamada Streamlit
-st.set_page_config(layout="wide")
+st.set_page_config(layout="centered", page_title="Jogo: Acerte o número!", page_icon="🎲")
 
 st.markdown("""
 <style>
@@ -21,6 +21,12 @@ label {
     border-radius: 10px;
     border: none;
     padding: 8px 16px;
+}
+.assinatura {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(162, 155, 254, 0.55);
 }
 </style>
 """, unsafe_allow_html=True)
@@ -74,3 +80,8 @@ if st.session_state["fim_jogo"]:
         for key in ["numsorteado", "tentativas", "resultado", "fim_jogo"]:
             del st.session_state[key]
         st.rerun()
+
+st.markdown(
+    '<div class="assinatura">Desenvolvido por João Paulo R. de Souza</div>',
+    unsafe_allow_html=True
+)
